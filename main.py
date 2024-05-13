@@ -1,5 +1,3 @@
-
-
 class Square:
     def __init__(self, a, b, c):
         self.a = a
@@ -21,7 +19,3 @@ class Square:
             return x_1
         else:
             print("No X")
-    # (-b+-D**1/2)/2a
-    # x_1 = (-b + (D ** 1 / 2)) / 2 * a
-    # x_2 = (-b - (D ** 1 / 2)) / 2 * a
-    # return x_1, x_2

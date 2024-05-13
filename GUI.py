@@ -52,7 +52,3 @@ window.geometry("700x600")
 window.title("Square calc by Alex <3")
 menu()
 window.mainloop()
-
-# one = Square(1, 2, 1)
-# print(one.Discr())
-# print(one.X())
