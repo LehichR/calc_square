@@ -20,16 +20,31 @@ def menu():
 
 def calc():
     clear()
-    Label(text="Введите ваше уравнение", font=("Arial", 15)).place(x=250, y=50)
+    Label(text="Введите ваше уравнение", font=("Arial", 15)).place(x=100, y=50)
 
-    def get_coefficient():
-        a_c = a.get()
-        print(a_c)
+    def decide():
+        a_c = int(a.get())
+        b_c = int(b.get())
+        c_c = int(c.get())
+        sqr = Square(a_c, b_c, c_c)
+        print(sqr.Discr())
+        print(sqr.X())
+        answer['text'] = sqr.X()
+        dis['text'] = sqr.Discr()
 
     a = Entry(width=5)
     a.place(x=100, y=100)
+    b = Entry(width=5)
+    b.place(x=200, y=100)
+    c = Entry(width=5)
+    c.place(x=300, y=100)
 
-    Button(text="Решить", font=("Arial", 15), command=get_coefficient).place(x=250, y=120)
+    Button(text="Решить", font=("Arial", 15), command=decide).place(x=170, y=140)
+
+    answer = Label(text="", font=("Arial", 15))
+    answer.place(x=170, y=200)
+    dis = Label(text="", font=("Arial", 15))
+    dis.place(x=170, y=230)
 
 
 window = Tk()
