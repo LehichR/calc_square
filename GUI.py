@@ -32,17 +32,24 @@ def calc():
         answer['text'] = sqr.X()
         dis['text'] = sqr.Discr()
 
+    Label(text="x²", font=("Arial", 13)).place(x=140, y=95)
     a = Entry(width=5)
     a.place(x=100, y=100)
+
+    Label(text="x", font=("Arial", 13)).place(x=240, y=95)
     b = Entry(width=5)
     b.place(x=200, y=100)
+
     c = Entry(width=5)
     c.place(x=300, y=100)
 
     Button(text="Решить", font=("Arial", 15), command=decide).place(x=170, y=140)
 
+    Label(text="Корни >", font=("Arial", 13)).place(x=40, y=205)
     answer = Label(text="", font=("Arial", 15))
     answer.place(x=170, y=200)
+
+    Label(text="Дискриминант > ", font=("Arial", 13)).place(x=40, y=235)
     dis = Label(text="", font=("Arial", 15))
     dis.place(x=170, y=230)
 
